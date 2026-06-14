@@ -1,0 +1,152 @@
+\doxysection{Funciones.\+cpp File Reference}
+\hypertarget{_funciones_8cpp}{}\label{_funciones_8cpp}\index{Funciones.cpp@{Funciones.cpp}}
+
+
+Definición del programa Funciones para el cálculo de funciones especiales.  
+
+
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{_funciones_8cpp_acdef7a1fd863a6d3770c1268cb06add3}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{_funciones_8cpp_ac22dbfdafb767e731825e28ff91e9676}{Op}}
+\begin{DoxyCompactList}\small\item\em Función principal del programa. \end{DoxyCompactList}\item 
+\Hypertarget{_funciones_8cpp_ad0da36b2558901e21e7a30f6c227a45e}\label{_funciones_8cpp_ad0da36b2558901e21e7a30f6c227a45e} 
+float {\bfseries x}
+\item 
+\Hypertarget{_funciones_8cpp_ac51334f57ef8b81c0629c9421798c344}\label{_funciones_8cpp_ac51334f57ef8b81c0629c9421798c344} 
+float {\bfseries m}
+\item 
+\Hypertarget{_funciones_8cpp_a4aec1a5be9d9a4a394a2e49e9744286e}\label{_funciones_8cpp_a4aec1a5be9d9a4a394a2e49e9744286e} 
+float {\bfseries a}
+\item 
+\Hypertarget{_funciones_8cpp_a83fc1af92e29717b4513d121b0c72c7d}\label{_funciones_8cpp_a83fc1af92e29717b4513d121b0c72c7d} 
+float {\bfseries b}
+\item 
+\Hypertarget{_funciones_8cpp_ae78103ab33f03590e84ff7bc735629d7}\label{_funciones_8cpp_ae78103ab33f03590e84ff7bc735629d7} 
+float {\bfseries c}
+\item 
+\Hypertarget{_funciones_8cpp_a3fbbd8a3959e76a2bc3455d3bade52dc}\label{_funciones_8cpp_a3fbbd8a3959e76a2bc3455d3bade52dc} 
+float {\bfseries d}
+\item 
+\Hypertarget{_funciones_8cpp_a8b6cc3f78b62c5c59645624670120e4d}\label{_funciones_8cpp_a8b6cc3f78b62c5c59645624670120e4d} 
+float {\bfseries result} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definición del programa Funciones para el cálculo de funciones especiales. 
+
+\begin{DoxyDate}{Date}
+2026-\/06-\/14 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Fátima Guadalupe Castañeda Robledo 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2026 
+\end{DoxyCopyright}
+
+
+\label{_funciones_8cpp_doc-func-members}
+\Hypertarget{_funciones_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_funciones_8cpp_acdef7a1fd863a6d3770c1268cb06add3}\index{Funciones.cpp@{Funciones.cpp}!main@{main}}
+\index{main@{main}!Funciones.cpp@{Funciones.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_funciones_8cpp_acdef7a1fd863a6d3770c1268cb06add3} 
+void main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Menu de funciones especiales.
+\begin{DoxyItemize}
+\item Se muestra un menú con las funciones especiales disponibles (Triangular, Gamma, Trapezoidal y Función S) y se le pide al usuario seleccionar la función que desea calcular ingresando el número correspondiente (1, 2, 3 o 4).
+\item Se utiliza la función scanf para almacenar el valor ingresado por el usuario en la variable Op, que se utilizará posteriormente para determinar qué función calcular.
+\item \texorpdfstring{$\ast$}{*} El menú se muestra utilizando la función printf, y se especifica que el usuario debe ingresar un número del 1 al 4 para seleccionar la función deseada.
+\end{DoxyItemize}
+
+Case 1:\+ Realiza el cálculo de la función Triangular.
+\begin{DoxyItemize}
+\item Se solicitan al usuario los valores de x, a, m y b necesarios para el cálculo de la función Triangular.
+\item Se utilizan estructuras de control if-\/else para evaluar las condiciones necesarias para calcular el resultado de la función Triangular, que se almacena en la variable result.
+\item El resultado de la función se muestra al usuario utilizando la función printf, y se especifica que el resultado se muestra con dos decimales utilizando el formato \%.2f.
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental. ~\newline
+
+\item \begin{DoxyNote}{Note}
+El programa asume que el usuario ingresará valores numéricos válidos para x, a, m y b. Si se ingresan valores no numéricos o si se ingresan valores que no cumplen con las condiciones necesarias para el cálculo de la función Triangular, el comportamiento del programa no está definido y podría resultar en un error de entrada o en resultados incorrectos.
+\end{DoxyNote}
+Case 2:\+ Realiza el cálculo de la función Gamma.
+\item Se solicitan al usuario los valores de x, a y m necesarios para el cálculo de la función Gamma.
+\item Se utilizan estructuras de control if-\/else para evaluar las condiciones necesarias para calcular el resultado de la función Gamma, que se almacena en la variable result.
+\item El resultado de la función se muestra al usuario utilizando la función printf, y se especifica que el resultado se muestra con dos decimales utilizando el formato \%.2f.
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental. ~\newline
+
+\item \begin{DoxyNote}{Note}
+El programa asume que el usuario ingresará valores numéricos válidos para x, a y m. Si se ingresan valores no numéricos o si se ingresan valores que no cumplen con las condiciones necesarias para el cálculo de la función Gamma, el comportamiento del programa no está definido y podría resultar en un error de entrada o en resultados incorrectos.
+\end{DoxyNote}
+
+\item \begin{DoxyNote}{Note}
+La función Gamma es una función de membresía utilizada en lógica difusa para representar la pertenencia de un valor a un conjunto difuso. El resultado de la función Gamma puede ser 0, un valor entre 0 y 1, o 1, dependiendo de las condiciones evaluadas en el programa.
+\end{DoxyNote}
+Case 3:\+ Realiza el cálculo de la función Trapezoidal.
+\item Se solicitan al usuario los valores de x, a, b, c y d necesarios para el cálculo de la función Trapezoidal.
+\item Se utilizan estructuras de control if-\/else para evaluar las condiciones necesarias para calcular el resultado de la función Trapezoidal, que se almacena en la variable result.
+\item El resultado de la función se muestra al usuario utilizando la función printf, y se especifica que el resultado se muestra con dos decimales utilizando el formato \%.2f.
+\item \texorpdfstring{$\ast$}{*} Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental. ~\newline
+
+\item \begin{DoxyNote}{Note}
+El programa asume que el usuario ingresará valores numéricos válidos para x, a, b, c y d. Si se ingresan valores no numéricos o si se ingresan valores que no cumplen con las condiciones necesarias para el cálculo de la función Trapezoidal, el comportamiento del programa no está definido y podría resultar en un error de entrada o en resultados incorrectos.
+\end{DoxyNote}
+
+\item \begin{DoxyNote}{Note}
+La función Trapezoidal es una función de membresía utilizada en lógica difusa para representar la pertenencia de un valor a un conjunto difuso. El resultado de la función Trapezoidal puede ser 0, un valor entre 0 y 1, o 1, dependiendo de las condiciones evaluadas en el programa. ~\newline
+
+\end{DoxyNote}
+Case 4:\+ Realiza el cálculo de la función S.
+\item Se solicitan al usuario los valores de x, a y c necesarios para el cálculo de la función S.
+\item Se utilizan estructuras de control if-\/else para evaluar las condiciones necesarias para calcular el resultado de la función S, que se almacena en la variable result.
+\item El resultado de la función se muestra al usuario utilizando la función printf, y se especifica que el resultado se muestra con dos decimales utilizando el formato \%.2f.
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental. ~\newline
+
+\item \begin{DoxyNote}{Note}
+El programa asume que el usuario ingresará valores numéricos válidos para x, a y c. Si se ingresan valores no numéricos o si se ingresan valores que no cumplen con las condiciones necesarias para el cálculo de la función S, el comportamiento del programa no está definido y podría resultar en un error de entrada o en resultados incorrectos.
+\end{DoxyNote}
+
+\item \begin{DoxyNote}{Note}
+La función S es una función de membresía utilizada en lógica difusa para representar la pertenencia de un valor a un conjunto difuso. El resultado de la función S puede ser 0, un valor entre 0 y 1, o 1, dependiendo de las condiciones evaluadas en el programa. ~\newline
+
+\end{DoxyNote}
+Default:\+ Manejo de entrada incorrecta.
+\item En caso de que el usuario ingrese un valor para Op que no corresponda a ninguna de las opciones del menú (1, 2, 3 o 4), se muestra un mensaje de error indicando que el valor ingresado es incorrecto y se solicita al usuario que ingrese un número del 1 al 4 para seleccionar una función válida.
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental. ~\newline
+
+\item \begin{DoxyNote}{Note}
+El programa asume que el usuario ingresará un número entero para seleccionar la función a calcular. Si se ingresa un valor no entero o si se ingresa un número que no corresponde a ninguna de las opciones del menú, el comportamiento del programa no está definido y podría resultar en un error de entrada o en la necesidad de reiniciar el programa para ingresar una opción válida. ~\newline
+
+\end{DoxyNote}
+
+\end{DoxyItemize}
+
+\label{_funciones_8cpp_doc-var-members}
+\Hypertarget{_funciones_8cpp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_funciones_8cpp_ac22dbfdafb767e731825e28ff91e9676}\index{Funciones.cpp@{Funciones.cpp}!Op@{Op}}
+\index{Op@{Op}!Funciones.cpp@{Funciones.cpp}}
+\doxysubsubsection{\texorpdfstring{Op}{Op}}
+{\footnotesize\ttfamily \label{_funciones_8cpp_ac22dbfdafb767e731825e28ff91e9676} 
+int Op}
+
+
+
+Función principal del programa. 
+
+
+\begin{DoxyItemize}
+\item Se definen las variables necesarias para el cálculo de las funciones especiales, incluyendo la variable Op para seleccionar la función a calcular, y las variables x, m, a, b, c, d y result para almacenar los valores de entrada y el resultado de la función.
+\item \texorpdfstring{$\ast$}{*} Las variables x, m, a, b, c, d y result se definen como float (decimal) para permitir el ingreso de valores con decimales y para almacenar los resultados de las funciones que pueden ser decimales.
+\item \texorpdfstring{$\ast$}{*} La variable Op se define como int (entero) para permitir la selección de la función a calcular mediante un menú de opciones. 
+\end{DoxyItemize}

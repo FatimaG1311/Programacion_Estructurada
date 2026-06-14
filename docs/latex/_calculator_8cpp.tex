@@ -1,0 +1,203 @@
+\doxysection{Calculator.\+cpp File Reference}
+\hypertarget{_calculator_8cpp}{}\label{_calculator_8cpp}\index{Calculator.cpp@{Calculator.cpp}}
+
+
+Definición del programa Calculator para la gestión de operaciones matemáticas.  
+
+
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{_calculator_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{_calculator_8cpp_a63a1b54dd070dd5ea0c3ab7ba8d0ab48}{Num1}}
+\begin{DoxyCompactList}\small\item\em Se definen las variables de los dos numeros y la opcion como int (entero). \end{DoxyCompactList}\item 
+\Hypertarget{_calculator_8cpp_aeb6a3a0042b28beb4a9746cab8d695cb}\label{_calculator_8cpp_aeb6a3a0042b28beb4a9746cab8d695cb} 
+int {\bfseries Num2}
+\item 
+\Hypertarget{_calculator_8cpp_ac22dbfdafb767e731825e28ff91e9676}\label{_calculator_8cpp_ac22dbfdafb767e731825e28ff91e9676} 
+int {\bfseries Op}
+\item 
+\Hypertarget{_calculator_8cpp_a770d6657550149d54fc1dfe50df0b42f}\label{_calculator_8cpp_a770d6657550149d54fc1dfe50df0b42f} 
+float {\bfseries Total}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definición del programa Calculator para la gestión de operaciones matemáticas. 
+
+\begin{DoxyDate}{Date}
+2026-\/06-\/14 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Fátima Guadalupe Castañeda Robledo 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2026 
+\end{DoxyCopyright}
+
+
+\label{_calculator_8cpp_doc-func-members}
+\Hypertarget{_calculator_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_calculator_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{Calculator.cpp@{Calculator.cpp}!main@{main}}
+\index{main@{main}!Calculator.cpp@{Calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_calculator_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ingreso de datos por parte del usuario.
+\begin{DoxyItemize}
+\item Se muestra un mensaje solicitando al usuario que ingrese dos números para realizar las operaciones (Num1 y Num2).
+\item Se utiliza la función scanf para almacenar los valores ingresados por el usuario en las variables correspondientes.
+\end{DoxyItemize}
+
+Menu de operaciones.
+\begin{DoxyItemize}
+\item Se muestra un menú con las operaciones disponibles (Suma, Resta, Multiplicación y División) y se le pide al usuario seleccionar la operación que desea realizar ingresando el número correspondiente (1, 2, 3 o 4).
+\item Se utiliza la función scanf para almacenar el valor ingresado por el usuario en la variable Op, que se utilizará posteriormente para determinar qué operación realizar.
+\end{DoxyItemize}
+
+Selección de la operación a realizar.
+\begin{DoxyItemize}
+\item Se muestra un mensaje solicitando al usuario que seleccione la operación que desea realizar.
+\item Se utiliza la función scanf para almacenar el valor ingresado por el usuario en la variable Op, que se utilizará posteriormente para determinar qué operación realizar.
+\end{DoxyItemize}
+
+Case 1:\+ Realiza la operación 1 (Suma).
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Total} & es la variable donde se almacena el resultado de la operación.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num1} & es la variable donde se almacena el primer número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num2} & es la variable donde se almacena el segundo número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item Imprimir el resultado (Total).
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental.
+\end{DoxyItemize}
+
+Case 2:\+ Realiza la operación 2 (Resta).
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Total} & es la variable donde se almacena el resultado de la operación.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num1} & es la variable donde se almacena el primer número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num2} & es la variable donde se almacena el segundo número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item Imprimir el resultado (Total).
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental.
+\end{DoxyItemize}
+
+Case 3:\+ Realiza la operación 3 (Multiplicación).
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Total} & es la variable donde se almacena el resultado de la operación.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num1} & es la variable donde se almacena el primer número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num2} & es la variable donde se almacena el segundo número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item Imprimir el resultado (Total).
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental.
+\end{DoxyItemize}
+
+Case 4:\+ Realiza la operación 4 (División).
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Total} & es la variable donde se almacena el resultado de la operación.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num1} & es la variable donde se almacena el primer número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num2} & es la variable donde se almacena el segundo número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item Imprimir el resultado (Total).
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental.
+\end{DoxyItemize}
+
+El caso de la división requiere una validación adicional para evitar errores de división por cero.
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em Num2} & es la variable donde se almacena el segundo número ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item If:\+ Antes de realizar la división, se debe revisar si el segundo número (Num2) es igual a 0, ya que no se puede dividir por cero.
+\item Si ese es el caso, se muestra un mensaje de error.
+\item Else:\+ Si el segundo número no es 0, se continúa con la operación y se muestra el resultado.
+\end{DoxyItemize}
+
+Default:\+ En caso de ingresar un valor incorrecto (variable Op).
+\begin{DoxyItemize}
+\item Se muestra un mensaje de error indicando que el valor ingresado es incorrecto y se solicita al usuario ingresar un número del 1 al 4 para seleccionar una operación válida.
+\item Break:\+ Se utiliza para salir del switch después de ejecutar el caso correspondiente, evitando que se ejecuten los casos siguientes de manera accidental.
+\end{DoxyItemize}
+
+\label{_calculator_8cpp_doc-var-members}
+\Hypertarget{_calculator_8cpp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_calculator_8cpp_a63a1b54dd070dd5ea0c3ab7ba8d0ab48}\index{Calculator.cpp@{Calculator.cpp}!Num1@{Num1}}
+\index{Num1@{Num1}!Calculator.cpp@{Calculator.cpp}}
+\doxysubsubsection{\texorpdfstring{Num1}{Num1}}
+{\footnotesize\ttfamily \label{_calculator_8cpp_a63a1b54dd070dd5ea0c3ab7ba8d0ab48} 
+int Num1}
+
+
+
+Se definen las variables de los dos numeros y la opcion como int (entero). 
+
+
+\begin{DoxyItemize}
+\item Se definen las variables de los dos numeros y la opcion como int (entero).
+\item Se define la variable del resultado final (variable Total) como float (decimal) para que pueda mostrar decimales en caso de ser necesario. 
+\end{DoxyItemize}

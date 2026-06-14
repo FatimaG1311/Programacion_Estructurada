@@ -1,0 +1,81 @@
+\doxysection{Promedio.\+cpp File Reference}
+\hypertarget{_promedio_8cpp}{}\label{_promedio_8cpp}\index{Promedio.cpp@{Promedio.cpp}}
+
+
+Definición del programa Promedio para el cálculo del promedio de un rango de números.  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{_promedio_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Función principal del programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definición del programa Promedio para el cálculo del promedio de un rango de números. 
+
+\begin{DoxyDate}{Date}
+2026-\/06-\/14 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Fátima Guadalupe Castañeda Robledo 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2026 
+\end{DoxyCopyright}
+
+
+\label{_promedio_8cpp_doc-func-members}
+\Hypertarget{_promedio_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_promedio_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{Promedio.cpp@{Promedio.cpp}!main@{main}}
+\index{main@{main}!Promedio.cpp@{Promedio.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_promedio_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función principal del programa. 
+
+
+\begin{DoxyItemize}
+\item El programa solicita al usuario que ingrese un número inicial y un número final, y luego calcula el promedio de todos los números enteros entre esos dos números (inclusive).
+\item Se utiliza una estructura de control if para verificar si el número inicial es mayor que el número final. Si es así, se intercambian los valores para asegurarse de que el programa funcione correctamente independientemente del orden en que se ingresen los números.
+\item Se utiliza un bucle while para iterar a través de los números entre el número inicial y el número final, sumando cada número a una variable de suma y contando cuántos números se han sumado.
+\item Después de la iteración, se verifica si se han sumado números (es decir, si el contador es mayor que 0) para evitar una división por cero al calcular el promedio. Si se han sumado números, se calcula el promedio dividiendo la suma total por el contador.
+\item Finalmente, se muestra el resultado del promedio al usuario. 
+\end{DoxyItemize}Ingreso de datos por parte del usuario.
+\begin{DoxyItemize}
+\item Se muestra un mensaje solicitando al usuario que ingrese un número inicial y un número final para calcular el promedio de los números entre ellos.
+\item Se utiliza la función cin para almacenar los valores ingresados por el usuario en las variables num1 y num2, que representan el número inicial y el número final, respectivamente.
+\item 
+\begin{DoxyParams}{Parameters}
+{\em num1} & almacena el número inicial ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em num2} & almacena el número final ingresado por el usuario.\\
+\hline
+\end{DoxyParams}
+Verificación y corrección del orden de los números.
+\item Se verifica si el número inicial es mayor que el número final.
+\item Si es así, se intercambian los valores para asegurarse de que el programa funcione correctamente independientemente del orden en que se ingresen los números.
+\end{DoxyItemize}
+
+Cálculo de la suma y el contador.
+\begin{DoxyItemize}
+\item Se inicializan las variables suma y cont para almacenar la suma de los números y el contador de los números sumados, respectivamente.
+\item Se utiliza un bucle while para recorrer los números entre num1 y num2, sumándolos y contándolos.
+\end{DoxyItemize}
+
+Cálculo del promedio.
+\begin{DoxyItemize}
+\item Se inicializa la variable prom para almacenar el promedio de los números.
+\item Se verifica si el contador (cont) es mayor que cero para evitar la división por cero.
+\item Si el contador es mayor que cero, se calcula el promedio dividiendo la suma entre el contador.
+\end{DoxyItemize}

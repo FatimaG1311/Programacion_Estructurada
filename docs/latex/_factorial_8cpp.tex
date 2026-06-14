@@ -1,0 +1,60 @@
+\doxysection{Factorial.\+cpp File Reference}
+\hypertarget{_factorial_8cpp}{}\label{_factorial_8cpp}\index{Factorial.cpp@{Factorial.cpp}}
+
+
+Definición del programa Factorial para el cálculo del factorial de un número.  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{_factorial_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Función principal del programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definición del programa Factorial para el cálculo del factorial de un número. 
+
+\begin{DoxyDate}{Date}
+2026-\/06-\/14 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Fátima Guadalupe Castañeda Robledo 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2026 
+\end{DoxyCopyright}
+
+
+\label{_factorial_8cpp_doc-func-members}
+\Hypertarget{_factorial_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_factorial_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{Factorial.cpp@{Factorial.cpp}!main@{main}}
+\index{main@{main}!Factorial.cpp@{Factorial.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_factorial_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función principal del programa. 
+
+
+\begin{DoxyItemize}
+\item El programa solicita al usuario que ingrese un número entero positivo y calcula su factorial utilizando un bucle while.
+\item Se utiliza una variable de tipo long long para almacenar el resultado del factorial, ya que el factorial de números grandes puede exceder el rango de un entero normal.
+\item El programa también incluye una validación para asegurarse de que el número ingresado sea positivo, ya que el factorial no está definido para números negativos.
+\item Si el número ingresado es negativo, se muestra un mensaje de error indicando que el factorial no está definido para números negativos.
+\item Si el número es positivo, se calcula el factorial y se muestra el resultado al usuario. 
+\end{DoxyItemize}Cálculo del factorial.
+\begin{DoxyItemize}
+\item Se utiliza una estructura de control if-\/else para verificar si el número ingresado es negativo o no.
+\item Si el número es negativo, se muestra un mensaje de error indicando que el factorial no está definido para números negativos.
+\item Si el número es positivo, se utiliza un bucle while para calcular el factorial. El bucle se ejecuta mientras el contador (i) sea mayor que 1, multiplicando el valor actual del factorial por el contador y luego decrementando el contador en cada iteración.
+\item Finalmente, se muestra el resultado del factorial al usuario.
+\item El uso de long long para la variable factorial permite manejar resultados de factoriales de números más grandes, aunque es importante tener en cuenta que el factorial de números muy grandes puede exceder incluso el rango de long long. \begin{DoxyNote}{Note}
+El programa asume que el usuario ingresará un número entero. Si se ingresa un valor no entero, el comportamiento del programa no está definido y podría resultar en un error de entrada.
+\end{DoxyNote}
+
+\end{DoxyItemize}
